@@ -1,16 +1,14 @@
 # Portfólio Pessoal — Currículo Vivo
 
 Um portfólio desenvolvido como um **currículo vivo**, apresentando minha trajetória, habilidades e projetos de forma interativa e diferente.
-O objetivo deste projeto é unir minhas experiências de UI/UX Design e desenvolvimento Front-End.
+O objetivo deste projeto é unir minhas experiências de UI/UX Design e desenvolvimento Front-End.  
 
----
 
 ## Preview
 
 🔗 Acesse o projeto:  
 (link em breve)
 
----
 
 ## Sobre o projeto
 
@@ -21,7 +19,6 @@ Aqui você encontra:
 - Habilidades técnicas e comportamentais  
 - Projetos desenvolvidos 
 
----
 
 ## Tecnologias utilizadas
 
@@ -30,7 +27,6 @@ Aqui você encontra:
 - JavaScript  / TypeScript  
 - React
 
----
 
 ## Aprendizados
 
@@ -42,7 +38,6 @@ Durante o desenvolvimento deste projeto, trabalhei principalmente em:
 - Responsividade e experiência do usuário  
 - Criação de interfaces e protótipos 
 
----
 
 ## Contato
 
