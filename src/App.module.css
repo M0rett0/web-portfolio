@@ -1,0 +1,119 @@
+.main {
+  padding-top: 64px;
+  flex: 1;
+}
+
+/* Hero */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  background: radial-gradient(ellipse at 50% 60%, rgba(255, 182, 193, 0.06) 0%, transparent 70%);
+}
+
+.heroEyebrow {
+  font-size: 0.9rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #ffb6c1;
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.highlight {
+  color: #ffb6c1;
+}
+
+.heroSub {
+  font-size: 1.1rem;
+  color: #888888;
+  max-width: 520px;
+  margin-bottom: 2.5rem;
+  line-height: 1.7;
+}
+
+.heroActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.btnPrimary {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  background-color: #ffb6c1;
+  color: #0a0a0a;
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+.btnPrimary:hover {
+  background-color: #ff91a4;
+  transform: translateY(-2px);
+}
+
+.btnOutline {
+  display: inline-block;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 182, 193, 0.5);
+  color: #ffb6c1;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.15s;
+}
+
+.btnOutline:hover {
+  background-color: rgba(255, 182, 193, 0.1);
+  border-color: #ffb6c1;
+  transform: translateY(-2px);
+}
+
+/* Sections */
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 2rem;
+  border-top: 1px solid rgba(255, 182, 193, 0.1);
+}
+
+.sectionTitle {
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background-color: #ffb6c1;
+  margin: 0.6rem auto 0;
+  border-radius: 2px;
+}
+
+.sectionSub {
+  color: #888888;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
