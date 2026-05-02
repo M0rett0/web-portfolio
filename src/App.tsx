@@ -2,6 +2,16 @@ import Navbar from './components/Navbar'
 import './App.css'
 import styles from './App.module.css'
 
+const marqueeItems = [
+  'Design UI/UX',
+  'Aplicativos funcionais',
+  'Prototipação',
+  'Sites personalizados',
+  'Identidade visual',
+  'Sistemas exclusivos',
+  'Design Systems',
+]
+
 export default function App() {
   return (
     <>
@@ -12,14 +22,31 @@ export default function App() {
         <section id="home" className={styles.hero}>
           <p className={styles.heroEyebrow}>Olá, seja bem-vindo</p>
           <h1 className={styles.heroTitle}>
-            Eu sou <span className={styles.highlight}>Eduarda Moretto</span>
+            Eduarda <span className={styles.highlight}>Moretto</span>
           </h1>
           <p className={styles.heroSub}>
-            Desenvolvedora apaixonada por criar experiências digitais únicas e elegantes.
+            Especializada 
+em UI/UX Design e desenvolvimento 
+front-End.
           </p>
           <div className={styles.heroActions}>
             <a href="#projetos" className={styles.btnPrimary}>Ver Projetos</a>
             <a href="#contato" className={styles.btnOutline}>Entre em Contato</a>
+          </div>
+
+          <div className={styles.marquee} aria-label="Serviços em destaque">
+            <div className={styles.marqueeInner}>
+              {[0, 1].map((group) => (
+                <div className={styles.marqueeGroup} key={group}>
+                  {marqueeItems.map((item) => (
+                    <span className={styles.marqueeItem} key={`${group}-${item}`}>
+                      <span>{item}</span>
+                      <span className={styles.moonIcon} aria-hidden="true">☾</span>
+                    </span>
+                  ))}
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
