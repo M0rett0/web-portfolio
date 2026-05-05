@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar'
 import ExperienceSection from './components/ExperienceSection'
+import ContactSection from './components/ContactSection'
 import './App.css'
 import styles from './App.module.css'
 
@@ -57,10 +58,7 @@ front-End.
 
         <ExperienceSection />
 
-        <section id="contato" className={styles.section}>
-          <h2 className={styles.sectionTitle}>Contato</h2>
-          <p className={styles.sectionSub}>Em breve...</p>
-        </section>
+        <ContactSection />
       </main>
     </>
   )
