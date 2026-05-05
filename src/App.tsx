@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar'
+import ExperienceSection from './components/ExperienceSection'
 import './App.css'
 import styles from './App.module.css'
 
@@ -18,7 +19,6 @@ export default function App() {
       <Navbar />
 
       <main className={styles.main}>
-        {/* Hero */}
         <section id="home" className={styles.hero}>
           <p className={styles.heroEyebrow}>Olá, seja bem-vindo</p>
           <h1 className={styles.heroTitle}>
@@ -50,19 +50,13 @@ front-End.
           </div>
         </section>
 
-        {/* Projetos */}
         <section id="projetos" className={styles.section}>
           <h2 className={styles.sectionTitle}>Projetos</h2>
           <p className={styles.sectionSub}>Em breve...</p>
         </section>
 
-        {/* Experiências */}
-        <section id="experiencias" className={styles.section}>
-          <h2 className={styles.sectionTitle}>Experiências</h2>
-          <p className={styles.sectionSub}>Em breve...</p>
-        </section>
+        <ExperienceSection />
 
-        {/* Contato */}
         <section id="contato" className={styles.section}>
           <h2 className={styles.sectionTitle}>Contato</h2>
           <p className={styles.sectionSub}>Em breve...</p>

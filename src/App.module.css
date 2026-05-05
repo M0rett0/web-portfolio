@@ -3,7 +3,6 @@
   flex: 1;
 }
 
-/* Hero */
 .hero {
   position: relative;
   min-height: 100vh;
@@ -148,7 +147,6 @@
   }
 }
 
-/* Sections */
 .section {
   min-height: 100vh;
   display: flex;
