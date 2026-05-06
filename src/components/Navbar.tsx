@@ -3,7 +3,7 @@ import styles from './Navbar.module.css'
 const navLinks = [
   { label: 'Home', href: '#home' },
   { label: 'Projetos', href: '#projetos' },
-  { label: 'Experiências', href: '#conhecimentos-tecnicos' },
+  { label: 'Skills', href: '#conhecimentos-tecnicos' },
   { label: 'Contato', href: '#contato' },
 ]
 

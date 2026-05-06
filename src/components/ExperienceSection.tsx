@@ -1,44 +1,47 @@
 import type { CSSProperties } from 'react'
 import styles from './ExperienceSection.module.css'
+import { FaDatabase, FaFigma, FaFlutter, FaPython, FaReact } from 'react-icons/fa6'
+import { BsTypescript } from 'react-icons/bs'
+import { SiJson, SiNextdotjs } from 'react-icons/si'
 
 const experienceCards = [
   {
-    label: 'FL',
+    icon: <FaFlutter />,
     color: '#f9a8d4',
     title: 'Flutter',
   },
   {
-    label: 'RE',
+    icon: <FaReact />,
     color: '#f472b6',
     title: 'React',
   },
   {
-    label: 'TS',
+    icon: <BsTypescript />,
     color: '#c084fc',
     title: 'TypeScript',
   },
   {
-    label: 'NX',
+    icon: <SiNextdotjs />,
     color: '#93c5fd',
     title: 'Next.js',
   },
   {
-    label: 'BD',
+    icon: <FaDatabase />,
     color: '#a7f3d0',
     title: 'Banco de Dados',
   },
   {
-    label: 'PY',
+    icon: <FaPython />,
     color: '#fef3c7',
     title: 'Python',
   },
   {
-    label: 'APIs',
+    icon: <SiJson />,
     color: '#fdba74',
     title: 'JSON',
   },
   {
-    label: 'FG',
+    icon: <FaFigma />,
     color: '#f87171',
     title: 'Figma',
   },
@@ -71,14 +74,14 @@ export default function ExperienceSection() {
       <div className={styles.colorShelf} aria-label="Areas de experiencia">
         {experienceCards.map((card) => (
           <button
-            key={card.label}
+            key={card.title}
             className={styles.colorItem}
             style={{ '--color': card.color } as CSSProperties}
             aria-label={card.title}
             data-title={card.title}
             type="button"
           >
-            <span>{card.label}</span>
+            <span>{card.icon}</span>
           </button>
         ))}
       </div>
