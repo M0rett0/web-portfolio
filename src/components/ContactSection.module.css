@@ -20,7 +20,7 @@
 }
 
 .kicker span {
-  color: #ff8bd7;
+  color: #ffb6c1;
 }
 
 .email {
@@ -72,7 +72,7 @@
 
 .socialLink:hover,
 .socialLink:focus-visible {
-  color: #ff8bd7;
+  color: #ffb6c1;
   transform: translateY(-2px);
 }
 
