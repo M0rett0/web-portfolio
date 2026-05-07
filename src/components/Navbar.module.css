@@ -10,10 +10,10 @@
 }
 
 .nav {
-  max-width: 1200px;
+  width: min(100%, 112rem);
   margin: 0 auto;
-  padding: 0 2rem;
-  height: 64px;
+padding: 0 5.5rem;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,8 +22,8 @@
 .logo {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #ffb6c1;
   letter-spacing: 2px;
+  color: #ffb6c1;
   cursor: default;
 }
 
@@ -38,10 +38,10 @@
   display: inline-block;
   padding: 0.4rem 1rem;
   border-radius: 6px;
-  font-size: 0.9rem;
-  font-weight: 500;
-  color: #e5e5e5;
   border: 1px solid transparent;
+  color: #f7f7f7;
+  font-size: 1rem;
+  font-weight: 500;
   transition: color 0.2s, border-color 0.2s, background-color 0.2s;
 }
 
@@ -49,4 +49,23 @@
   color: #ffb6c1;
   border-color: rgba(255, 182, 193, 0.4);
   background-color: rgba(255, 182, 193, 0.08);
+}
+
+@media (max-width: 760px) {
+  .nav {
+    height: 5.75rem;
+    padding: 0 1.25rem;
+  }
+
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .links {
+    gap: 0.8rem;
+  }
+
+  .link {
+    font-size: 0.9rem;
+  }
 }

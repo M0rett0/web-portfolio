@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
-        <span className={styles.logo}>EM</span>
+        <span className={styles.logo}>E.M</span>
 
         <ul className={styles.links}>
           {navLinks.map((link) => (
