@@ -7,7 +7,7 @@ O objetivo deste projeto é unir minhas experiências de UI/UX Design e desenvol
 ## Preview
 
 🔗 Acesse o projeto:  
-(link em breve)
+https://web-portfolio-iota-jet.vercel.app/
 
 
 ## Sobre o projeto
