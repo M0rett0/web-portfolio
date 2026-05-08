@@ -1,0 +1,63 @@
+.featuredServices {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  width: 100%;
+  padding: 1.2rem 0;
+  border-top: 1px solid rgba(255, 182, 193, 0.75);
+  border-bottom: 1px solid rgba(255, 182, 193, 0.75);
+  background-color: #0a0a0a;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 90%,
+    transparent 100%
+  );
+}
+
+.marqueeInner {
+  display: flex;
+  width: max-content;
+  animation: marquee 18s linear infinite;
+}
+
+.marqueeGroup {
+  display: flex;
+  align-items: center;
+}
+
+.marqueeItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0 1.25rem;
+  color: #ffffff;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(0.95rem, 2vw, 1.2rem);
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.moonIcon {
+  color: #ffb6c1;
+  font-size: 1.4em;
+  line-height: 1;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
