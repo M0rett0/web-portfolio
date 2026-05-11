@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&display=swap');
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  padding: 8rem 2rem 5rem;
+  text-align: center;
+  background:
+    radial-gradient(circle at 48% 62%, rgba(255, 135, 221, 0.2) 0 10%, rgba(0, 0, 0, 0) 36%),
+    url('../assets/blurPink.png') center / cover no-repeat,
+    #0a0a0a;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(0, 0, 0, 0.32), rgba(0, 0, 0, 0) 44%, rgba(0, 0, 0, 0.42)),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.58));
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 70rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroTitle {
+  position: relative;
+  width: 100%;
+  min-height: 19rem;
+  margin: 0;
+  color: #ffffff;
+  line-height: 0.82;
+}
+
+.firstName,
+.lastName {
+  display: block;
+  letter-spacing: 0;
+}
+
+.firstName {
+  position: absolute;
+  right: 30%;
+  font-family: Impact, Haettenschweiler, 'Arial Black', sans-serif;
+  font-size: 11rem;
+  font-weight: 900;
+  text-transform: none;
+  letter-spacing: 5px;
+}
+
+.lastName {
+  position: absolute;
+  left: 35%;
+  top: 25%;
+  color: #ffb6c1;
+  font-family: 'Hurricane', 'Segoe Script', 'Brush Script MT', cursive;
+  font-size: 15.75rem;
+  font-weight: 400;
+  line-height: 0.85;
+  text-shadow: 0 0 18px rgba(246, 129, 215, 0.2);
+  transform: rotate(-2deg);
+}
+
+.heroSub {
+  width: min(100%, 38rem);
+  margin: 0.6rem 0 4rem;
+  padding: 0.4rem 1.75rem 0.5rem;
+  border: 1.5px solid rgba(255, 255, 255, 0.8);
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.88);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.3rem;
+  line-height: 1.25;
+}
+
+.heroActions {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.btnPrimary,
+.btnOutline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 10rem;
+  min-height: 3.3rem;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  transition: transform 0.2s, border-color 0.2s, background-color 0.2s, color 0.2s;
+}
+
+.btnPrimary {
+  background-color: #ffb6c1;
+  color: #050505;
+  border: 1.5px solid #ffb6c1;
+}
+
+.btnPrimary:hover {
+  background-color: #ff91a4;
+  transform: translateY(-2px);
+}
+
+.btnOutline {
+  color: #ffb6c1;
+  border: 1px solid #ffb6c1;
+  background-color: rgba(0, 0, 0, 0.18);
+}
+
+.btnOutline:hover {
+  background-color: rgba(255, 182, 193, 0.1);
+  border-color: #ffb6c1;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 1100px) {
+  .heroTitle {
+    min-height: 15rem;
+  }
+
+  .firstName {
+    font-size: 8rem;
+  }
+
+  .lastName {
+    left: 40%;
+    top: 25%;
+    font-size: 10rem;
+  }
+
+  .heroSub {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .hero {
+    min-height: 100svh;
+    padding: 7rem 1.25rem 4rem;
+  }
+
+  .heroContent {
+    width: min(100%, 28rem);
+  }
+
+  .heroTitle {
+    min-height: 12.5rem;
+  }
+
+  .firstName {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6rem;
+  }
+
+  .lastName {
+    left: 65%;
+    top: 30%;
+    transform: translateX(-50%) rotate(-2deg);
+    font-size: 7rem;
+  }
+
+  .heroSub {
+    margin: 0.35rem 0 2.4rem;
+    padding: 0.55rem 1rem 0.65rem;
+    font-size: 0.9rem;
+  }
+
+  .heroActions {
+    width: 100%;
+    gap: 0.85rem;
+  }
+
+  .btnPrimary,
+  .btnOutline {
+    width: 100%;
+    min-width: 0;
+    min-height: 3.6rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .heroTitle {
+    min-height: 10rem;
+  }
+
+  .firstName {
+    font-size: 3.2rem;
+  }
+
+  .lastName {
+    left: 4%;
+    top: 35%;
+    font-size: 4rem;
+  }
+}
